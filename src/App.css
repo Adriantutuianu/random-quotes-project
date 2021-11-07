@@ -22,4 +22,5 @@ footer {
   padding-bottom: 20px;
   background-color: var(--primary-color);
   color: white;
+  text-align: center;
 }
