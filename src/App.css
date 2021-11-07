@@ -7,4 +7,5 @@ header {
   text-align: center;
   font-size: 34px;
   color: var(--primary-color);
+  padding: 40px;
 }
