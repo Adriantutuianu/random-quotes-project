@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header>Random Quotes</header>
-      <footer>@{year} - made by Adrian Tut</footer>
+      <footer>@{year} - Made by Adrian Tut</footer>
     </div>
   );
 }
