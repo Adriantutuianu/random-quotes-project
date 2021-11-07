@@ -9,7 +9,7 @@ function App() {
       <main>
         <div className="quote-container">quote</div>
       </main>
-      <footer>@{year} - Made by Adrian Tut</footer>
+      <footer>@{year} - Made by Adrian Tut.</footer>
     </div>
   );
 }
