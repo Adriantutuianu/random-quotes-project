@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="App">
       <header>Random Quotes</header>
+      <footer></footer>
     </div>
   );
 }
