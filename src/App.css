@@ -11,7 +11,6 @@
 }
 
 header {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   font-size: 34px;
   color: var(--primary-color);
@@ -22,7 +21,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: var(--primary-color);
   color: white;
   height: 50px;
