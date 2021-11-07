@@ -1,9 +1,14 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [quote, setQuote] = useState({});
   const year = new Date().getFullYear();
+
+  useEffect(() => {
+    // get a quote on load
+    getQuote(endpoint);
+  }, []);
 
   const getQuote = async (path) => {
     try {
@@ -16,10 +21,10 @@ function App() {
       console.log("Failed to retrieve the quote: " + error);
     }
   };
-  // console.log(quote);
+
   const endpoint = "https://api.quotable.io/random";
 
-  getQuote(endpoint);
+  console.log(quote);
 
   return (
     <div className="App">
