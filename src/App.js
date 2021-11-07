@@ -1,19 +1,22 @@
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [quote, setQuote] = useState({});
   const year = new Date().getFullYear();
+
   const getQuote = async (path) => {
     try {
       await fetch(path)
         .then((result) => result.json())
         .then((result) => {
-          console.log(result);
+          setQuote(result);
         });
     } catch (error) {
       console.log("Failed to retrieve the quote: " + error);
     }
   };
-
+  // console.log(quote);
   const endpoint = "https://api.quotable.io/random";
 
   getQuote(endpoint);
