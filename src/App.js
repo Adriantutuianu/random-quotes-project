@@ -30,7 +30,9 @@ function App() {
     <div className="App">
       <header>Random Quotes</header>
       <main>
-        <div className="quote-container">quote</div>
+        <div className="quote-container">
+          {quote.content} - {quote.author}{" "}
+        </div>
       </main>
       <footer>@{year} - Made by Adrian Tut.</footer>
     </div>
