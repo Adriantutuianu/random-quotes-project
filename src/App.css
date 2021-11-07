@@ -17,6 +17,12 @@ header {
   padding: 40px;
 }
 
+main {
+  background-color: red;
+  height: 400px;
+  width: 400px;
+}
+
 footer {
   display: flex;
   justify-content: center;
