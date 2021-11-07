@@ -1,5 +1,10 @@
+:root {
+  --primary-color: #536342;
+}
+
 header {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   font-size: 34px;
+  color: var(--primary-color);
 }
