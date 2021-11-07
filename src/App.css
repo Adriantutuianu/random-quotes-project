@@ -24,10 +24,19 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
   height: calc(100% - 100px);
   margin: auto;
   font-size: 22px;
+  background-color: red;
+}
+
+main .quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  background-color: chartreuse;
 }
 
 footer {
