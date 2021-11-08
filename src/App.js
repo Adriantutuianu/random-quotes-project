@@ -24,15 +24,18 @@ function App() {
 
   const endpoint = "https://api.quotable.io/random";
 
-  console.log(quote.tags);
+  console.log(quote);
 
   const tags =
     quote &&
     quote.tags &&
     quote.tags.map((tag, index) => {
-      return <li key={index}>{tag}</li>;
+      return (
+        <li className="tag" key={index}>
+          {tag}
+        </li>
+      );
     });
-  console.log(tags);
   return (
     <div className="App">
       <header>Random Quotes</header>
