@@ -26,14 +26,19 @@ function App() {
 
   console.log(quote.tags);
 
+  const tags =
+    quote &&
+    quote.tags &&
+    quote.tags.map((tag, index) => {
+      return <li key={index}>{tag}</li>;
+    });
+  console.log(tags);
   return (
     <div className="App">
       <header>Random Quotes</header>
       <main>
         <div className="quote-container">
-          <ul className="tags">
-            <li>ABC</li>
-          </ul>
+          <ul className="tags">{tags}</ul>
           <div className="quote">
             {quote.content} - {quote.author}
           </div>
