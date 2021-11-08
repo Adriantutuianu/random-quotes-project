@@ -31,12 +31,22 @@ main {
 }
 
 main .quote-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   height: 400px;
   width: 400px;
   background-color: chartreuse;
+}
+
+.quote-container .quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.quote-container .tags {
+  position: absolute;
+  text-transform: capitalize;
 }
 
 footer {

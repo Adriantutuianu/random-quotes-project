@@ -24,14 +24,17 @@ function App() {
 
   const endpoint = "https://api.quotable.io/random";
 
-  console.log(quote);
+  console.log(quote.tags);
 
   return (
     <div className="App">
       <header>Random Quotes</header>
       <main>
         <div className="quote-container">
-          {quote.content} - {quote.author}{" "}
+          <div className="tags">{quote.tags}</div>
+          <div className="quote">
+            {quote.content} - {quote.author}
+          </div>
         </div>
       </main>
       <footer>@{year} - Made by Adrian Tut.</footer>
