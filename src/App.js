@@ -31,7 +31,9 @@ function App() {
       <header>Random Quotes</header>
       <main>
         <div className="quote-container">
-          <div className="tags">{quote.tags}</div>
+          <ul className="tags">
+            <li>ABC</li>
+          </ul>
           <div className="quote">
             {quote.content} - {quote.author}
           </div>
