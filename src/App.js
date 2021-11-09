@@ -41,13 +41,15 @@ function App() {
       <header>Random Quotes</header>
       <main>
         <div className="quote-container">
+          <button className="new-quote-btn" onClick={() => getQuote(endpoint)}>
+            New Quote
+          </button>
           <ul className="tags">{tags}</ul>
           <div className="quote">
             {quote.content} - {quote.author}
           </div>
         </div>
       </main>
-      <button onClick={() => getQuote(endpoint)}>New Quote</button>
 
       <footer>@{year} - Made by Adrian Tut.</footer>
     </div>
