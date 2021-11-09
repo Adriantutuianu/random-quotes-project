@@ -9,6 +9,7 @@
 
 :root {
   --primary-color: #536342;
+  --secondary-color: #ffffe0;
 }
 
 header {
@@ -27,14 +28,13 @@ main {
   height: calc(100% - 100px);
   margin: auto;
   font-size: 22px;
-  background-color: red;
 }
 
 main .quote-container {
   position: relative;
-  height: 400px;
-  width: 400px;
-  background-color: chartreuse;
+  max-height: 500px;
+  max-width: 500px;
+  background-color: var(--secondary-color);
 }
 
 .quote-container .quote {
@@ -47,21 +47,26 @@ main .quote-container {
 .quote-container .tags {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   height: 80px;
-  width: 100%;
-  text-align: right;
   position: absolute;
-  right: 0px;
-  bottom: 20px;
+  right: 0;
+  bottom: 0;
   text-transform: uppercase;
   font-size: 12px;
   list-style-type: none;
   padding: 30px;
 }
+
 .quote-container .tags .tag {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  width: fit-content;
+  color: white;
+  background-color: rgba(12, 18, 12, 0.5);
+  margin-bottom: 10px;
+  padding: 5px 10px;
 }
 
 footer {
