@@ -47,6 +47,8 @@ function App() {
           </div>
         </div>
       </main>
+      <button onClick={() => getQuote(endpoint)}>New Quote</button>
+
       <footer>@{year} - Made by Adrian Tut.</footer>
     </div>
   );
