@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 function App() {
   const [quote, setQuote] = useState({});
   const [loading, setLoading] = useState(false);
-
+  const [hasError, setHasError] = useState(false);
   const year = new Date().getFullYear();
 
   useEffect(() => {
@@ -21,14 +21,13 @@ function App() {
           setQuote(result);
         });
     } catch (error) {
+      setHasError(true);
       console.log("Failed to retrieve the quote: " + error);
     }
     setLoading(false);
   };
 
   const endpoint = "https://api.quotable.io/random";
-
-  console.log(quote);
 
   const tags =
     quote &&
@@ -44,7 +43,9 @@ function App() {
     <div className="App">
       <header>Random Quotes</header>
       <main>
-        {loading ? (
+        {hasError ? (
+          "Failed to retrieve the quote. Please refresh!"
+        ) : loading ? (
           "Loading, please wait..."
         ) : (
           <div className="quote-container">
