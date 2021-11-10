@@ -62,7 +62,7 @@ function App() {
           </div>
         )}
       </main>
-      <Footer />
+      <Footer name="Adrian Tut" />
     </div>
   );
 }

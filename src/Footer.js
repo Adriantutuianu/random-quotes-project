@@ -1,9 +1,13 @@
 import React from "react";
 import "./footer.css";
 
-const Footer = () => {
+const Footer = (props) => {
   const year = new Date().getFullYear();
-  return <footer>@{year} - Made by Adrian Tut.</footer>;
+  return (
+    <footer>
+      @{year} - Made by {props.name}.
+    </footer>
+  );
 };
 
 export default Footer;
