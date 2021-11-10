@@ -74,12 +74,3 @@ main .quote-container {
   margin-bottom: 10px;
   padding: 5px 10px;
 }
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary-color);
-  color: white;
-  height: 50px;
-}

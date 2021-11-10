@@ -1,11 +1,11 @@
 import "./App.css";
 import { useState, useEffect } from "react";
+import Footer from "./Footer";
 
 function App() {
   const [quote, setQuote] = useState({});
   const [loading, setLoading] = useState(false);
   const [hasError, setHasError] = useState(false);
-  const year = new Date().getFullYear();
 
   useEffect(() => {
     // get a quote on load
@@ -62,8 +62,7 @@ function App() {
           </div>
         )}
       </main>
-
-      <footer>@{year} - Made by Adrian Tut.</footer>
+      <Footer />
     </div>
   );
 }
