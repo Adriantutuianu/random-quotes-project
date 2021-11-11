@@ -1,3 +1,7 @@
+# Random Quotes Generator App
+
+A simple app that will use built in Fetch Api to retrieve random quotes.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
