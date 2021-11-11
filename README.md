@@ -1,6 +1,7 @@
 # Random Quotes Generator App
 
 A simple app that will use built in Fetch Api to retrieve random quotes.
+Used React Hooks and will generate quote on load of the app.
 
 ![Preview Image](preview.png)
 
