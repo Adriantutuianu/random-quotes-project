@@ -2,6 +2,8 @@
 
 A simple app that will use built in Fetch Api to retrieve random quotes.
 
+![Preview Image](preview.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
